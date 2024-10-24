@@ -6,13 +6,24 @@
     <title>@ViewData["Title"] - TallerEnClaseSemana4_TomasLopez</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/StyleSheet.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/TallerEnClaseSemana4_TomasLopez.styles.css" asp-append-version="true" />
+    <style>
+        body {
+            background-color: lightgoldenrodyellow; /* Cambia el color de fondo a lo que necesites */
+           
+            
+        }
+    </style>
 </head>
 <body>
     <header>
+        
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">TallerEnClaseSemana4_TomasLopez</a>
+                
+                <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYseupupK-yMEwqV1NeWukvQ1_p_Kfol0-4g&s" style="width:100px; height:auto" />
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Sistema de datos LigaPro</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -20,14 +31,22 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Jugador" asp-action="Index">Jugadores</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Equipos" asp-action="Index">Equipos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Estadios" asp-action="Index">Estadios</a>
+                        </li>
+                        
                     </ul>
                 </div>
             </div>
+            
         </nav>
     </header>
     <div class="container">

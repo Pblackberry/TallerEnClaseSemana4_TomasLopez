@@ -1,0 +1,9 @@
+﻿.p {
+    font-size: 40px;
+    color: darkred;
+}
+
+.menu-botones {
+    background-color: #f0f0f0; /* Cambia el color de fondo a lo que necesites */
+    padding: 10px;
+}

@@ -13,7 +13,7 @@ namespace TallerEnClaseSemana4_TomasLopez.Models
         public String Ciudad {  get; set; }
         public int Titulos { get; set; }
         public bool AceptExtr {  get; set; }
-        public Estadio Estadio { get; set; }
+        public Estadio? Estadio { get; set; }
         [ForeignKey("Estadio")]
         [AllowNull]
         public int IdEstadio { get; set; }

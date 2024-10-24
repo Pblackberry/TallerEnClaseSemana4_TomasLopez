@@ -1,0 +1,48 @@
+﻿@model IEnumerable<TallerEnClaseSemana4_TomasLopez.Models.Jugador>
+
+@{
+    ViewData["Title"] = "Jugadores LigaPro";
+}
+
+<h1>Jugadores LigaPro</h1>
+
+<p>
+    <a asp-action="Create">Insertar Jugador</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Nombre
+                
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Posicion)
+            </th>
+            <th>
+                ID Equipo
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NombreJugador)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Posicion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdEquipo)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdJugador">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.IdJugador">Detalles</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdJugador">Eliminar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
