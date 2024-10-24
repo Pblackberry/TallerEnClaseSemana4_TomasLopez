@@ -22,7 +22,7 @@
                 @Html.DisplayNameFor(model => model.Titulos)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.AceptExtr)
+                Extrangeros
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Estadio)
@@ -49,9 +49,9 @@
                 @Html.DisplayFor(modelItem => item.Estadio.IdEstadio)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.IdEquipo">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdEquipo">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdEquipo">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.IdEquipo">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.IdEquipo">Detalles</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdEquipo">Eliminar</a>
             </td>
         </tr>
 }
